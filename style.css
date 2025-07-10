@@ -1,3 +1,4 @@
+/* Reset */
 body, html {
   margin: 0;
   padding: 0;
@@ -5,55 +6,68 @@ body, html {
   color: white;
 }
 
-.container {
-  background: url('9c79e800-3058-4836-8788-f949718dd887.png') no-repeat center center/cover;
+.hero {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background: url('background.jpg') no-repeat center center/cover;
+  position: relative;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 51, 102, 0.7); /* BUMN Blue Overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.1);
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  max-width: 420px;
   width: 90%;
-  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .logo {
   width: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   margin: 0.5rem 0;
+  color: #ffffff;
 }
 
-.lokasi {
+.sub-location {
   font-size: 1rem;
+  color: #cce7ff;
   margin-bottom: 1rem;
 }
 
-.info p {
-  margin: 0.4rem 0;
+.event-details p {
+  margin: 0.5rem 0;
   font-size: 0.95rem;
 }
 
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
-  padding: 0.8rem 2rem;
-  background-color: white;
-  color: black;
-  font-weight: bold;
+  padding: 0.75rem 2rem;
+  background-color: #00AEEF; /* BUMN Biru Muda */
+  color: white;
+  font-weight: 600;
+  border: none;
   border-radius: 25px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: #008ec4;
 }
